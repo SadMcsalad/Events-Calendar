@@ -1,0 +1,118 @@
+/* Style the calendar, defining colors, fonts, and spacing - rubric */
+
+html, body {
+
+    height: 80%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9381ff;
+    font-family: Sans-serif;
+    color: white;
+
+  }
+  
+  #grid {
+
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    height: 75vh;
+
+  }
+  
+  #header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+  }
+  
+  #lastMonth, #nextMonth {
+
+    color: white;
+    font-size: 20px;
+    background-color: #b8b8ff;
+    cursor: pointer;
+    padding: 50px 50px;
+    border: none;
+    border-radius: 50px;
+
+  }
+  
+  #calendar {
+
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+
+  }
+  
+  #calendar th, #calendar td {
+
+    border: 1px solid #B2BEB5;
+    padding: 0;
+    text-align: center;
+    width: calc(100% / 7);
+    height: calc((95vh - 50px) / 6);
+    font-size: 1.2vw;
+
+  }
+  
+  .booked {
+
+    font-weight: bold;
+    background-color: gold;
+    color: #b8b8ff;
+
+  }
+  
+  #calendar td {
+
+    cursor: pointer;
+    transition: background-color 0s;
+
+  }
+  
+  #calendar td:hover {
+
+    background-color: gold;
+    
+  }
+  
+  #jumpForm {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+  }
+  
+  #jumpForm input {
+
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #b8b8ff;
+    border-radius: 5px;
+    background-color: #b8b8ff;
+    color: gold;
+    font-size: 14px;
+    text-align: center;
+
+  }
+  
+  #jumpForm button {
+
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #b8b8ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  

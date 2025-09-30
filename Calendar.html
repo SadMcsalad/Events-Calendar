@@ -1,0 +1,59 @@
+<!-- Calendar layout structure, including days, weeks, and months - rubric -->
+
+<!DOCTYPE html>
+
+<html>
+
+    <!-- Title and linking html to JS and CSS files -->
+  <head>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="Calendar.css">
+    <script src ="Calendar.js"></script>
+  </head>
+  
+  <body>
+    <div id ="grid">
+  
+        <!-- ID's for all buttons user can click for navigation and bookings, these ID's will be used in the CSS and JS -->
+      <div id ="header">
+          <button id = "lastMonth">Last</button>
+          <h1 id="chosenMonthAndYear"></h1>
+          <button id = "nextMonth">Next</button>
+          
+          <!-- Jump to date form in order to jump to an entered year and month -->
+          <form id="jumpForm" onsubmit="jumpToDate(event)">
+            <label for="monthInput">Month:</label>
+            <input type="number" id="monthInput" min="1" max="12" placeholder="MM" required>
+            <label for="yearInput">Year:</label>
+            <input type="number" id="yearInput" placeholder="YYYY" required>
+            <button type="submit">Go</button>
+         </form>
+
+
+      </div>
+  
+      
+        <table id="calendar">
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+  
+          </thead>
+  
+          <tbody id="body"></tbody>
+          
+        </table>
+  
+    </div>
+  
+  </body>
+  
+</html>
+      
